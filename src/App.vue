@@ -1,40 +1,35 @@
 <template>
-  <div class="page-container md-layout-column">
-    <md-toolbar class="md-primary">
-      <md-avatar>
-        <img src="/img/logo.jpg" alt="Avatar">
-      </md-avatar>
+  <div>
+    <b-navbar toggleable="lg" type="dark" variant="dark">
+      <b-navbar-brand href="#">
+        <b-img v-bind="mainProps" src="/img/logo.jpg" rounded="circle" alt="Circle image"></b-img>
+      </b-navbar-brand>
 
-      <div class="md-toolbar-section-end">
-        <md-button><router-link to="/">Home</router-link></md-button>
-        <md-button><router-link to="/blog">Blog</router-link></md-button>
-      </div>
-    </md-toolbar>
-    <md-content class="md-primary">
-      <router-view/>
-    </md-content>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <!-- Right aligned nav items -->
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item to="/">Home</b-nav-item>
+          <!-- <b-nav-item to="/work">Work</b-nav-item>
+          <b-nav-item to="/blog">Blog</b-nav-item> -->
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+    <router-view/>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<script>
+export default {
+  data() {
+      return {
+        mainProps: {width: 75, height: 75 }
+      }
+    }
+}
+</script>
 
-.md-content {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px;
-  }
-.page-container {
-    min-height: 300px;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid rgba(#000, .12);
-  }
+<style>
 
-   // Demo purposes only
-  .md-drawer {
-    width: 230px;
-    max-width: calc(100vw - 125px);
-  }
 </style>
-
