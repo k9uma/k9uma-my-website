@@ -11,6 +11,9 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-nav-item to="/">Home</b-nav-item>
+          <b-nav-item-dropdown text="Podcasts" right>
+            <b-dropdown-item to="/podcast-codecast">CodeCast Zambia</b-dropdown-item>
+          </b-nav-item-dropdown>
           <!-- <b-nav-item to="/work">Work</b-nav-item>
           <b-nav-item to="/blog">Blog</b-nav-item> -->
         </b-navbar-nav>

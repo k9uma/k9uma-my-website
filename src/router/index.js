@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Work from '../views/Work.vue'
+import Podcast from '../views/Podcast.vue'
 
 Vue.use(VueRouter)
 
@@ -12,7 +13,12 @@ const routes = [
     component: Home
   },
   {
-    path: '/',
+    path: '/podcast-codecast',
+    name: 'podcast',
+    component: Podcast
+  },
+  {
+    path: '/work',
     name: 'work',
     component: Work
   },
