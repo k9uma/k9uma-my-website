@@ -72,6 +72,22 @@
         </b-row>
       </b-container>
       <hr class="my-4">
+
+      <hr class="my-4">
+
+      <p class="text-center">
+        MY SOCIALS
+      </p>
+      <b-container class="bv-example-row">
+        <b-row class="text-center">
+          <b-col>
+          
+            <a href="https://www.twitter.com/sour_bones" target="_blank"><font-awesome-icon :icon="{ prefix: 'fab', iconName: 'twitter' }" /></a>
+              
+          </b-col>
+        </b-row>
+      </b-container>
+      <hr class="my-4">
     </b-jumbotron>
   </div>
 </template>

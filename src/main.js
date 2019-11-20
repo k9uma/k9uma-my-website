@@ -7,9 +7,12 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret, faHeart } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faUserSecret, faHeart)
+library.add(faFacebook)
+library.add(faTwitter)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
