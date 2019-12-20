@@ -66,9 +66,9 @@
       </p>
       <b-container class="bv-example-row">
         <b-row class="text-center">
-          <b-col><b-button block variant="dark" @click="scheduleMeeting(15)">For 15 Minutes</b-button></b-col>
-          <b-col cols="5"><b-button block variant="dark" @click="scheduleMeeting(30)">For 30 Minutes</b-button></b-col>
-          <b-col><b-button block variant="dark" @click="scheduleMeeting(60)">For 60 Minutes</b-button></b-col>
+          <!-- <b-col><b-button block variant="dark" @click="scheduleMeeting(15)">For 15 Minutes</b-button></b-col> -->
+          <b-col cols="5"><b-button block variant="dark" @click="scheduleMeeting(15)">For 15 Minutes</b-button></b-col>
+          <!-- <b-col><b-button block variant="dark" @click="scheduleMeeting(60)">For 60 Minutes</b-button></b-col> -->
         </b-row>
       </b-container>
       <hr class="my-4">
